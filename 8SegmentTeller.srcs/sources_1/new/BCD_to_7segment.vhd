@@ -13,9 +13,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity BCD_to_7segment is
     Port ( 
-    BCD_in : in STD_LOGIC_VECTOR (3 downto 0);
-    Zeven_Segment : out STD_LOGIC_VECTOR (6 downto 0)
-    );
+        BCD_in : in STD_LOGIC_VECTOR (3 downto 0);
+        Zeven_Segment : out STD_LOGIC_VECTOR (6 downto 0)
+        );
 end BCD_to_7segment;
 
 architecture Behavioral of BCD_to_7segment is

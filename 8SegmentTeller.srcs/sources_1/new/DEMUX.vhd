@@ -21,7 +21,7 @@ end DEMUX;
 architecture Behavioral of DEMUX is
 
 begin
-    process
+    process(selector)
     begin
         case selector is
             when "000" => 
