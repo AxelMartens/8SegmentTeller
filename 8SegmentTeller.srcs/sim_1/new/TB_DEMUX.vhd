@@ -36,8 +36,7 @@ begin
 
   stimulus: process
     begin
-      if (EndOFSim = false) then
-          wait for 10ns;
+      if (EndOfSim = false) then
           selector <= "000";
           wait for 10ns;
           selector <= "001";
@@ -53,7 +52,7 @@ begin
           selector <= "110";
           wait for 10ns;
           selector <= "111";
-          EndOFSim <= true;
+          EndOfSim <= true;
       else
           wait;
       end if;
