@@ -40,7 +40,7 @@ begin
             when "101" => BCD <= t6;
             when "110" => BCD <= t7;
             when "111" => BCD <= t8;
-            when others => BCD <= "000";
+            when others => BCD <= "0000";
         end case;
     end process;
             

@@ -33,17 +33,17 @@ architecture bench of MUX_tb is
           );
   end component;
 
-  signal selector: bit_vector(2 downto 0);
-  signal t1: std_logic_vector(3 downto 0);
-  signal t2: std_logic_vector(3 downto 0);
-  signal t3: std_logic_vector(3 downto 0);
-  signal t4: std_logic_vector(3 downto 0);
-  signal t5: std_logic_vector(3 downto 0);
-  signal t6: std_logic_vector(3 downto 0);
-  signal t7: std_logic_vector(3 downto 0);
-  signal t8: std_logic_vector(3 downto 0);
-  signal BCD: std_logic_vector(3 downto 0) ;
-
+    signal selector: bit_vector(2 downto 0);
+    signal t1: std_logic_vector(3 downto 0);
+    signal t2: std_logic_vector(3 downto 0);
+    signal t3: std_logic_vector(3 downto 0);
+    signal t4: std_logic_vector(3 downto 0);
+    signal t5: std_logic_vector(3 downto 0);
+    signal t6: std_logic_vector(3 downto 0);
+    signal t7: std_logic_vector(3 downto 0);
+    signal t8: std_logic_vector(3 downto 0);
+    signal BCD: std_logic_vector(3 downto 0);
+    signal EndOfSim : boolean := false;
 begin
 
   uut: MUX port map ( selector => selector,
@@ -60,17 +60,18 @@ begin
   stimulus: process
   begin
       --standaard decl om tellers te kunnen onderscheiden
-      t1 <= "000";
-      t2 <= "001";
-      t3 <= "010";
-      t4 <= "011";
-      t5 <= "100";
-      t6 <= "101";
-      t7 <= "110";
-      t8 <= "111";
+      
+      t1 <= "0001";
+      t2 <= "0010";
+      t3 <= "0011";
+      t4 <= "0100";
+      t5 <= "0101";
+      t6 <= "0110";
+      t7 <= "0111";
+      t8 <= "1000";
    --selector input
+   
       if (EndOFSim = false) then
-              wait for 10ns;
               selector <= "000";
               wait for 10ns;
               selector <= "001";
@@ -90,12 +91,6 @@ begin
           else
               wait;
           end if;
-  
-  
-    
-
-    -- Put test bench stimulus code here
-
     wait;
   end process;
 
