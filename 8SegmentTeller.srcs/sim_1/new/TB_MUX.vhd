@@ -59,9 +59,40 @@ begin
 
   stimulus: process
   begin
+      --standaard decl om tellers te kunnen onderscheiden
+      t1 <= "000";
+      t2 <= "001";
+      t3 <= "010";
+      t4 <= "011";
+      t5 <= "100";
+      t6 <= "101";
+      t7 <= "110";
+      t8 <= "111";
+   --selector input
+      if (EndOFSim = false) then
+              wait for 10ns;
+              selector <= "000";
+              wait for 10ns;
+              selector <= "001";
+              wait for 10ns;
+              selector <= "010";
+              wait for 10ns;
+              selector <= "011";
+              wait for 10ns;
+              selector <= "100";
+              wait for 10ns;
+              selector <= "101";
+              wait for 10ns;
+              selector <= "110";
+              wait for 10ns;
+              selector <= "111";
+              EndOFSim <= true;
+          else
+              wait;
+          end if;
   
-    -- Put initialisation code here
-
+  
+    
 
     -- Put test bench stimulus code here
 
