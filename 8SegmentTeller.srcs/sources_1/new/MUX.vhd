@@ -14,14 +14,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity MUX is
     PORT( 
         selector: in bit_vector(2 downto 0); -- output vd scan_teller als input, selecteert 1 vd 8 tellers als datalijn
-        teller1: in std_logic_vector(3 downto 0);
-        teller2: in std_logic_vector(3 downto 0);
-        teller3: in std_logic_vector(3 downto 0);
-        teller4: in std_logic_vector(3 downto 0);
-        teller5: in std_logic_vector(3 downto 0);
-        teller6: in std_logic_vector(3 downto 0);
-        teller7: in std_logic_vector(3 downto 0);
-        teller8: in std_logic_vector(3 downto 0);
+        t1: in std_logic_vector(3 downto 0);
+        t2: in std_logic_vector(3 downto 0);
+        t3: in std_logic_vector(3 downto 0);
+        t4: in std_logic_vector(3 downto 0);
+        t5: in std_logic_vector(3 downto 0);
+        t6: in std_logic_vector(3 downto 0);
+        t7: in std_logic_vector(3 downto 0);
+        t8: in std_logic_vector(3 downto 0);
         BCD: out std_logic_vector(3 downto 0) -- stuurt geselecteerde ingang door naar decoder
         );
 end MUX;
@@ -32,14 +32,14 @@ begin
     process(selector)
         begin
         case selector is
-            when "000" => BCD <= teller1;
-            when "001" => BCD <= teller2;
-            when "010" => BCD <= teller3;
-            when "011" => BCD <= teller4;
-            when "100" => BCD <= teller5;
-            when "101" => BCD <= teller6;
-            when "110" => BCD <= teller7;
-            when "111" => BCD <= teller8;
+            when "000" => BCD <= t1;
+            when "001" => BCD <= t2;
+            when "010" => BCD <= t3;
+            when "011" => BCD <= t4;
+            when "100" => BCD <= t5;
+            when "101" => BCD <= t6;
+            when "110" => BCD <= t7;
+            when "111" => BCD <= t8;
             when others => BCD <= "000";
         end case;
     end process;
