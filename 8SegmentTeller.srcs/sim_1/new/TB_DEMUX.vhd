@@ -26,7 +26,8 @@ architecture bench of DEMUX_tb is
   end component;
 
   signal selector: bit_vector(2 downto 0);
-  signal Display_on: std_logic_vector(7 downto 0) ;
+  signal Display_on: std_logic_vector(7 downto 0);
+  signal EndOfSim : boolean := false;
 
 begin
 
@@ -34,28 +35,29 @@ begin
                         Display_on => Display_on );
 
   stimulus: process
-  begin
-  wait for 10ns;
-  selector <= "000";
-  wait for 10ns;
-  selector <= "001";
-  wait for 10ns;
-  selector <= "010";
-  wait for 10ns;
-  selector <= "011";
-  wait for 10ns;
-  selector <= "100";
-  wait for 10ns;
-  selector <= "101";
-  wait for 10ns;
-  selector <= "110";
-  wait for 10ns;
-  selector <= "111";
-  
-    
-    -- Put test bench stimulus code here
-
-    wait;
+    begin
+      if (EndOFSim = false) then
+          wait for 10ns;
+          selector <= "000";
+          wait for 10ns;
+          selector <= "001";
+          wait for 10ns;
+          selector <= "010";
+          wait for 10ns;
+          selector <= "011";
+          wait for 10ns;
+          selector <= "100";
+          wait for 10ns;
+          selector <= "101";
+          wait for 10ns;
+          selector <= "110";
+          wait for 10ns;
+          selector <= "111";
+          EndOFSim <= true;
+      else
+          wait;
+      end if;
+      wait;
   end process;
 
 
