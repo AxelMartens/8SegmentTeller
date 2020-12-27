@@ -25,7 +25,7 @@ architecture Behavioral of Scan_teller is
 signal temp : std_logic_vector(2 downto 0) := "000";
 
 begin
-    process(clk)
+    process(clk, rst)
     begin
         if (rst <= '1') then
             temp <= "000";

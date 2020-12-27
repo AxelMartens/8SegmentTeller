@@ -59,6 +59,7 @@ begin
 
   stimulus: process
   begin
+      
       --standaard decl om tellers te kunnen onderscheiden
       
       t1 <= "0001";
