@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl work  \
-"../../../../8SegmentTeller.srcs/sources_1/new/BCD_to_7segment.vhd" \
-
-vhdl xil_defaultlib  \
-"../../../../8SegmentTeller.srcs/sim_1/new/TB_BCD_to_7segment.vhd" \
-
-# Do not sort compile order
-nosort

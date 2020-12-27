@@ -1,1 +1,0 @@
--wto "c66a721f39ad4fd494f0a88696200957" --incr --debug "typical" --relax --mt "2" -L "work" -L "xil_defaultlib" -L "secureip" --snapshot "BCD_to_7segment_tb_behav" "xil_defaultlib.BCD_to_7segment_tb" -log "elaborate.log" 
