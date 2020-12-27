@@ -35,8 +35,28 @@ begin
   stimulus: process
   begin
   
-    -- Put initialisation code here
-
+    -- testtime == 100ns
+        BCD_in <= "0000";
+        wait for 10ns;
+        BCD_in <= "0001";
+        wait for 10ns;
+        BCD_in <= "0010";
+        wait for 10ns;
+        BCD_in <= "0011";
+        wait for 10ns;
+        BCD_in <= "0100";
+        wait for 10ns;
+        BCD_in <= "0101";
+        wait for 10ns;
+        BCD_in <= "0110";
+        wait for 10ns;
+        BCD_in <= "0111";
+        wait for 10ns;
+        BCD_in <= "1000";
+        wait for 10ns;
+        BCD_in <= "1001";
+        wait for 10ns;
+       
 
     -- Put test bench stimulus code here
 

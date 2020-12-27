@@ -1,6 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx3/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c66a721f39ad4fd494f0a88696200957 --incr --debug typical --relax --mt 2 -L work -L xil_defaultlib -L secureip --snapshot MUX_tb_behav xil_defaultlib.MUX_tb -log elaborate.log 
+Running: D:/Xilinx3/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c66a721f39ad4fd494f0a88696200957 --incr --debug typical --relax --mt 2 -L work -L xil_defaultlib -L secureip --snapshot BCD_to_7segment_tb_behav xil_defaultlib.BCD_to_7segment_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity work.MUX [mux_default]
-Compiling architecture bench of entity xil_defaultlib.mux_tb
-Built simulation snapshot MUX_tb_behav
+Compiling architecture behavioral of entity work.BCD_to_7segment [bcd_to_7segment_default]
+Compiling architecture bench of entity xil_defaultlib.bcd_to_7segment_tb
+Built simulation snapshot BCD_to_7segment_tb_behav

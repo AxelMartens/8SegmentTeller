@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Dec 27 15:22:45 2020
-# Process ID: 15156
-# Current directory: C:/Users/User/Documents/Schoolcursussen Odisee/2e Jaar/Digitaal Systeemontwerp/Labo/Project/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/User/Documents/Schoolcursussen Odisee/2e Jaar/Digitaal Systeemontwerp/Labo/Project/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim/xsim.dir/DEMUX_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/User/Documents/Schoolcursussen Odisee/2e Jaar/Digitaal Systeemontwerp/Labo/Project/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/User/Documents/Schoolcursussen Odisee/2e Jaar/Digitaal Systeemontwerp/Labo/Project/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Sun Dec 27 16:14:59 2020
+# Process ID: 16028
+# Current directory: C:/Users/vonck/OneDrive/Documenten/GitHub/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/vonck/OneDrive/Documenten/GitHub/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim/xsim.dir/BCD_to_7segment_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/vonck/OneDrive/Documenten/GitHub/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/vonck/OneDrive/Documenten/GitHub/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/User/Documents/Schoolcursussen -notrace
+source C:/Users/vonck/OneDrive/Documenten/GitHub/8SegmentTeller/8SegmentTeller.sim/sim_1/behav/xsim/xsim.dir/BCD_to_7segment_tb_behav/webtalk/xsim_webtalk.tcl -notrace
