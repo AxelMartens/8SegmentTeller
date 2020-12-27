@@ -35,10 +35,24 @@ begin
 
   stimulus: process
   begin
+  wait for 10ns;
+  selector <= "000";
+  wait for 10ns;
+  selector <= "001";
+  wait for 10ns;
+  selector <= "010";
+  wait for 10ns;
+  selector <= "011";
+  wait for 10ns;
+  selector <= "100";
+  wait for 10ns;
+  selector <= "101";
+  wait for 10ns;
+  selector <= "110";
+  wait for 10ns;
+  selector <= "111";
   
-    -- Put initialisation code here
-
---testhomo
+    
     -- Put test bench stimulus code here
 
     wait;
