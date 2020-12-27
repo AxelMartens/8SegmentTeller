@@ -38,7 +38,7 @@ begin
   
     -- Put initialisation code here
 
-
+--testhomo
     -- Put test bench stimulus code here
 
     wait;
